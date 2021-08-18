@@ -1,0 +1,6 @@
+<div *ngFor="let t of allTodos"; index as i>
+
+  <ol>{{t.task}}</ol>
+  <span *ngIF="t.completed==false"><button onclick="completeTask(t)">Complete</button></span>
+  </div>
+
